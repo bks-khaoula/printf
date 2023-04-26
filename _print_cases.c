@@ -23,4 +23,12 @@ void	_print_cases(const char format, va_list args, int *count)
 		write_char('%', count);
 	else if (format == 'd' || format == 'i')
 		write_nbr((va_arg(args, int)), count);
+	else if (format == 'o')
+		write_nbr_unsigned((va_arg(args, unsigned int)), count);
+	else if (format == 'x')
+		write_hexa((va_arg(args, unsigned long int)), 0, count);
+	else if (format == 'X')
+		write_hexa((va_arg(args, unsigned long int)), 32, count);
+	else if (format == 'u')
+		write_nbr_unsigned((va_arg(args, unsigned int)), count);
 }
