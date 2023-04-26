@@ -3,7 +3,7 @@
 #include <unistd.h>
 #include "main.h"
 
-/*
+/**
  * write_char - Funct that print the character.
  *
  * @c: the character.
@@ -15,7 +15,7 @@ void	write_char(char c, int *count)
 	*count += write(1, &c, 1);
 }
 
-/*
+/**
  * write_str - Funct prints struings.
  *
  * @str: string

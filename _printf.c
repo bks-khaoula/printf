@@ -1,16 +1,16 @@
 #include "main.h"
 
-/*
+/**
  * _printf - Funct works as a predefined printf().
  *
  * @format: the format.
  * @...: A variable number of a format to be printed.
  *
  * Description: check all formats and print them
- * Returns: return number of the format.
+ * Return: return number of the format.
  */
 
-int	_printf(const char *format, ...)
+int _printf(const char *format, ...)
 {
 	va_list	args;
 	int i;
