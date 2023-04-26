@@ -21,4 +21,6 @@ void	_print_cases(const char format, va_list args, int *count)
 		write_str((va_arg(args, char *)), count);
 	else if (format == '%')
 		write_char('%', count);
+	else if (format == 'd' || format == 'i')
+		write_nbr((va_arg(args, int)), count);
 }
