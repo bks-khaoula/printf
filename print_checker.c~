@@ -1,0 +1,15 @@
+#include "ft_printf.h"
+
+int	ft_check(char const c)
+{
+	char	*str;
+
+	str = "cspdiuxX%";
+	while (*str)
+	{
+		if (c == *str)
+			return (1);
+		str++;
+	}
+	return (0);
+}
