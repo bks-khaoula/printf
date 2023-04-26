@@ -12,7 +12,7 @@ int char_check(char const c)
 {
 	char *str;
 
-	strr = "csidouxX%";
+	str = "csidouxX%";
 	while (*str)
 	{
 		if (c == *str)
