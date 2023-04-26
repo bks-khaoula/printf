@@ -11,6 +11,10 @@ void write_str(char *str, int *count);
 int char_check(char const c);
 void _print_cases(const char form, va_list args, int *count);
 int _printf(const char *format, ...);
-void	write_nbr(int n, int *count);
-void	_print(const char format, va_list args, int *count);
+void write_nbr(int n, int *count);
+void _print(const char format, va_list args, int *count);
+void write_nbr(int n, int *count);
+void _print(const char format, va_list args, int *count)
+void write_hexa(unsigned long int nbr, int toUpper, int *count)
+static int write_newchar(char c, int toUpper);
 #endif
