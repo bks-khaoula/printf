@@ -10,7 +10,8 @@
 
 int	char_check(char const c)
 {
-	char	*str;
+	char *str;
+
 	str = "cs%";
 	while (*str)
 	{
@@ -18,5 +19,6 @@ int	char_check(char const c)
 			return (1);
 		str++;
 	}
+
 	return (0);
 }
