@@ -11,6 +11,7 @@
  *
  * Return: number of char.
  */
+
 void _print_cases(const char format, va_list args, int *count)
 {
 	if (format == 'c')
