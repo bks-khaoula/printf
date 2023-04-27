@@ -10,7 +10,8 @@
  * Return: return number of the format.
  */
 
-int _printf(const char *format, ...){
+int _printf(const char *format, ...)
+{
 	va_list	args;
 	int i;
 	int count;
