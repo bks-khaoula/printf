@@ -15,6 +15,7 @@
 
 void _print_cases(const char format, va_list args, int *count)
 {
+
 	if (format == 'c')
 		write_char((va_arg(args, int)), count);
 	else if (format == 's')
