@@ -5,17 +5,14 @@
 
 /**
  * _print_cases - all cases of printed characters.
- *
  * @format: the format of char.
  * @args: my argument.
  * @count: count the number of char.
  *
  * Return: number of char.
  */
-
 void _print_cases(const char format, va_list args, int *count)
 {
-
 	if (format == 'c')
 		write_char((va_arg(args, int)), count);
 	else if (format == 's')
@@ -23,5 +20,5 @@ void _print_cases(const char format, va_list args, int *count)
 	else if (format == '%')
 		write_char('%', count);
 	else if (format == 'd' || format == 'i')
-		 write_nbr((va_arg(args, int)), count);
+		write_nbr((va_arg(args, int)), count);
 }
